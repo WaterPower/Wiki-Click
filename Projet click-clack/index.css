@@ -1,0 +1,376 @@
+body {
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    background-color: #f8f9fa;
+    color: #202122;
+}
+
+.main_container {
+    display: flex;
+}
+
+.italic {
+    font-style: italic;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 66px;
+    border: solid 1px #a3bfb1;
+    align-items: center;
+}
+
+p {
+    line-height: 1.3rem;
+}
+
+h1, h3, h4, h5 {
+    font-weight: normal;
+    margin: 0px;
+}
+
+h4 {
+    line-height: 2rem;
+}
+
+ul {
+    list-style: none;
+    text-align: start;}
+
+li {
+    color: #202122;
+    font-size: 1em ;
+    font-weight: 100;
+    margin-top: 4px;
+}
+
+table, tr, th {
+    background-color: #ebebeb;
+    user-select: none; 
+    font-family: sans-serif;
+    color: #202122;
+    margin: 0px;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.85rem;
+
+}
+
+ol {
+    font-size: 0.8rem;
+    column-count: 2;
+}
+
+footer{
+    display: flex;
+    margin: 20px 0px 0px 0px;
+    justify-content: center;
+}
+
+.footer_container {
+    font-size: 0.8rem;
+    width: 92%;
+    border-top: solid 1px #a2a9b1 ;
+    display: block;
+}
+
+.calender_title {
+    border: 2px solid #a2a9b1;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.logo_container {
+    border: solid 1px red;
+    display: flex;
+    width: 222px;
+    height: 50px;
+}
+
+.logo_wiki {
+    width: 160px;
+    size: 100%;
+    border: none;
+}
+
+.input_search {
+    margin-left: 100px;
+    border: solid 1px #a2a9b1 ;
+    border-right: none;
+    border-radius: 0%;
+    width: 310px;
+    height: 32px;
+    background-image: url("images/magni_glass.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 50px;
+}
+
+.click_bt {
+    border-radius: 0%;
+    border: solid 1px #a2a9b1;
+    width: 70px;
+    height: 32px;
+}
+
+.click_bt:active {
+    border: solid 2px #36c;
+}
+
+.menu_container {
+    margin: 5px 5px 0px 0px;
+    width: 248px;
+    border: solid 1px #a3bfb1;
+    height: auto;
+}
+
+.menu_sub_title{
+    margin-top: 80px;
+    border-bottom: solid 1px #a3bfb1;
+    width: 230px;
+}
+
+.article_container {
+    width: 72vw;
+    border: solid 1px darkblue;
+    border-bottom: none;
+    margin-top: 5px;
+}
+
+.welcome_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    background-color: #ebebeb;
+    border: solid 1px #ddd;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+.big_title_wiki_article {
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+    font-size: 1.8rem;
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 50px;
+    border-bottom: 1px solid #a2a9b1 ;
+    padding-bottom: 4px;
+}
+
+.title_wiki_article {
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+    font-size: 1.5rem;
+}
+
+.article_text_container {
+    display: flex;
+}
+
+.infobox_container {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    background-color: #ebebeb;
+    border: solid 1px #a2a9b1;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+    float: right;
+}
+
+.cookie_logo{
+    position: relative;
+    width: 220px;
+    height: 103px;
+    background-image: url("images/cookie_background.PNG");
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.cookie_center {
+    position: relative;
+    left: -90px;
+    top: 15px;
+}
+
+.more_cursor {
+    display: grid;
+    grid-template: repeat(1, [row] minmax(120px, 1fr)) / repeat(1, [col] 1fr);;
+}
+
+.cursors {
+    position: absolute;
+    top: -35px;
+    left: -120px;
+}
+
+.wiki_link, .wiki_link_active {
+    color: #3366cc;
+    user-select: none; 
+}
+.wiki_link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.wiki_link_active:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.buy_cursor:hover {
+    cursor: default;    /*grab*/
+}
+
+.wiki_link_clicked {
+    color: #795cb2;
+}
+
+.WL_idle_gaming{
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(250, 249, 247);
+    width: 120px;
+    height: 170px;
+    text-align: center;
+    text-justify: auto;
+    margin-top: -170px;
+    margin-left: -100px;
+    border: solid 1px #202122;
+    box-shadow: 5px 5px 30px rgb(204, 201, 201);
+    flex-direction: column;
+
+}
+
+  
+.wiki_link_active:hover .WL_idle_gaming {
+    visibility: visible;
+}
+
+.NOU_container {
+    display: none;
+    width: 90%;
+    border: solid 1px #a2a9b1;
+    background-color: #ebebeb;
+
+}
+
+.NOC_container {
+    display: none;
+    width: 90%;
+    border: solid 1px #a2a9b1;
+    background-color: #ebebeb;
+
+}
+
+.wiki_blue {
+    background-color: #ecfcf4;
+}
+
+
+.liste_contributors > li {
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.NOC_button {
+    float: right;
+    margin-right: 5px;
+    border: solid 1px #a2a9b1;
+    border-radius: 2px;
+    line-height: 1.15rem;
+    background-color: #ecfcf4;
+}
+
+.liste_contributors {
+    margin-left: -30px;
+}
+
+.language_dropdown {
+    display: block;
+    color: #36c;
+    width: 165px;
+    height: 32px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    user-select: none;
+}
+.language_dropdown:hover {
+    background-color: rgb(206, 221, 250);
+}
+
+
+.image_icon_wiki_language {
+    width: 20px;
+}
+
+.language_v_icon {
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.language_dropdown_container {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    width: 165px;
+    max-height: 200px;
+    background-color: #ecfcf4;
+    border: solid 1px #c0c5ca;
+    z-index: 2;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+.liste_language {
+    max-height: 140px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.language_add {
+    margin-top: -5px;
+    border-color: none;
+    color: #202122;
+}
+
+.grey {
+    background-color: #d6d3d3;
+}
+
+.calender_container {
+    display: none;
+    width: 90%;
+}
+
+.container_footer_link {
+    display: flex;
+    flex-direction: row;
+}
+
+.margin_right {
+    margin-right: 15px;
+}
+
+.reference_liste {
+    break-inside: avoid;
+    margin-left: 15px;
+    margin-right: 5px;
+}
